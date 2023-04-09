@@ -11,7 +11,6 @@ mongoose.connect(CONNECTION_STRING);
 
 const app = express();
 app.use(cors());
-app.options('*', cors());
 app.use(express.json());
 
 TuitsController(app);
